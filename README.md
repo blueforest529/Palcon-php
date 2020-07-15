@@ -1,4 +1,4 @@
-# Palcon프레임 워크 예제
+# Palcon FrameWork
 - 로그인 form 작성
 - mysql db에 데이터 넣고 빼기
 
