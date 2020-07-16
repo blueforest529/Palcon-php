@@ -2,12 +2,10 @@
 
 use Phalcon\Mvc\Controller;
 
-class IndexController extends ControllerBase
+class IndexController extends Controller
 {
-
     public function indexAction()
     {
         $this->view->users = Users::find();
     }
 }
-

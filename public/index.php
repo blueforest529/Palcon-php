@@ -46,7 +46,7 @@ $di->set(
     }
 );
 
-
+// Setup the database service
 $di->set(
     'db',
     function () {
@@ -61,14 +61,16 @@ $di->set(
     }
 );
 
- $application = new Application($di);
 
+$application = new Application($di);
 
- try {
+try {
+    // Handle the request
     $response = $application->handle();
 
     $response->send();
 } catch (\Exception $e) {
-    echo "Exception: ", $e->getMessage();
+    echo 'Exception: ', $e->getMessage();
 }
+
 

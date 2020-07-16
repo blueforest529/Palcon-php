@@ -1,0 +1,19 @@
+<h2>login</h2>
+
+<?php echo $this->tag->form("login/register"); ?>
+
+    <p>
+        <label for="login_id">ID</label>
+        <?php echo $this->tag->textField("login_id"); ?>
+    </p>
+
+    <p>
+        <label for="login_pw">PW</label>
+        <?php echo $this->tag->textField("login_pw"); ?>
+    </p>
+
+    <p>
+        <?php echo $this->tag->submitButton("Register"); ?>
+    </p>
+
+</form>
